@@ -1,27 +1,73 @@
-# ChallengerPyou
+# Challenge Pyou
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.17.
+Uma aplicação Angular para explorar e gerenciar faixas do Spotify usando a API oficial.
 
-## Development server
+## Funcionalidades
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- 🎵 Listagem de faixas por ISRC
+- 🔍 Busca de faixas por ISRC
+- ▶️ Player integrado com preview das músicas
+- 🎧 Integração com Spotify para reprodução completa
+- 📱 Interface responsiva e moderna
+- 🌗 Design moderno com efeitos de glassmorphism
 
-## Code scaffolding
+## Tecnologias Utilizadas
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Angular 17
+- TypeScript
+- TailwindCSS
+- Spotify Web API
+- RxJS
 
-## Build
+## Configuração do Ambiente
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. Clone o repositório:
 
-## Running unit tests
+```bash
+git clone https://github.com/seu-usuario/challenger-pyou.git
+cd challenger-pyou
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+2. Instale as dependências:
 
-## Running end-to-end tests
+```bash
+npm install
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+3. Configure as variáveis de ambiente:
 
-## Further help
+- Copie o arquivo `.env.example` para `.env`
+- Preencha as credenciais do Spotify:
+  - `CLIENT_ID`
+  - `CLIENT_SECRET`
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Ambientes Disponíveis
+
+### Desenvolvimento
+
+```bash
+npm run start: deve # ou
+ng serve
+```
+
+Acesse: `http://localhost:4200`
+
+### Produção
+
+```bash
+npm run build
+# ou
+ng build --configuration production
+
+Link direto: https://rafaaquino.github.io/front-end-challenge/
+```
+
+Os arquivos serão gerados na pasta `dist/`
+
+## API Spotify
+
+O projeto utiliza a API do Spotify para:
+
+- Buscar faixas por ISRC
+- Obter previews de músicas
+- Integração com player do Spotify
